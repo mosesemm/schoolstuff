@@ -28,7 +28,8 @@ class LinearKP:
             if added_weights + current_weight <= capacity:
                 added_weights += current_weight
                 added_values.append(item)
-            else:
+
+            if added_weights == capacity:
                 break
 
         return added_values
